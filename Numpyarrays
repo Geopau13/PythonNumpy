@@ -1,0 +1,55 @@
+import numpy as np
+
+python_list= [1,2,3,4]
+list_2=[5,6,7,8]
+
+#convertir listas normales a NUMPY array:
+x=np.array(python_list)
+y=np.array(list_2)
+
+#IN numpy you can sum list in a easier way
+def numpy_version():
+  z=x+y
+
+print(numpy_version)
+
+#Import NumPy and create a NumPy array
+#created an array from a nested list:
+
+array=np.array([[1,2,3],[3,4,5],[6,7,8]])
+
+array
+#array size:
+array.size
+#data type array
+array.dtype
+#shape of array
+array.shape
+
+#An array has an attribute called dimension that tells you the number of axes in the array:
+array.ndim
+# If you want to know what type of object it is, you will use the type() function to learn about it:
+type(array)
+#If you want to know the type of data present in that array, you will use the attribute ‘.dtype’:
+array.dtype
+
+#Use arange() function to create collection of continuous integers
+arr=np.arange(10)
+arr
+#The zeros() function creates an n-dimensional array of zeros. If no shape is specified, then it will create a one-dimensional array:
+arr=np.zeros(10)
+arr
+
+#In case you want collection of ones, NumPy has a function called ones():
+arr=np.ones(7)
+arr
+#linspace() generates values which are equally spaced from each other:
+arr=np.linspace(start=17, stop=31,num=50)
+arr
+#If you don’t pass ‘num’ argument, it will generate 50 equally spaced values
+
+#You can use append method to add an element in a NumPy array:
+np.append(array,8)
+
+#You can also add an element to a Python list using np.append() method. But the returned object is a NumPy array.
+python_list=[1,2,3]
